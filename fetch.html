@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <article>
-
-  </article>
+<!doctype html>
+<html>
   <body>
-    <input type="button" name="" value="fetch" onclick="
-     fetch('css').then(function(response){
-       response.text().then(function(text){
-         document.querySelector('article').innerHTML = text;
-       })
-     })
+    <article>
+
+    </article>
+    <input type="button" value="fetch" onclick="
+      fetch('css').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML = text;
+        })
+      })
     ">
   </body>
 </html>
