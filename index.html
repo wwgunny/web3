@@ -6,7 +6,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="colors.js"></script>
   <script>
-    function fetch(page){
+    function fetchPage(page){
       fetch(page).then(function(response){
         response.text().then(function(text){
           document.querySelector('article').innerHTML = text;
